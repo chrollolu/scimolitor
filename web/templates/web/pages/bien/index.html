@@ -1,0 +1,75 @@
+{% extends '../../base.html' %}
+{% load static %}
+
+{% block content %}
+ <!--Page Title-->
+ <section class="page-title" style="background-image:url({% static 'images/background/3.jpg' %})">
+    <div class="auto-container">
+        <h1>Nos Biens</h1>
+        <ul class="bread-crumb clearfix">
+            <li><a href="{% url 'web:index' %}">ACCUEIL</a></li>
+            <li class="active">Biens</li>
+        </ul>
+    </div>
+</section>
+<!--End Page Title-->
+
+<!--Project Page Section-->
+<section class="project-section project-page-section">
+    <div class="auto-container">
+        
+        <!--MixitUp Galery-->
+        <div class="mixitup-gallery">
+            
+            <!--Filter-->
+            <div class="filters text-center clearfix">
+                <ul class="filter-tabs filter-btns clearfix">
+                    <li class="filter active" data-role="button" data-filter="all">All</li>
+                    <li class="filter" data-role="button" data-filter=".architecture">Architecture</li>
+                    <li class="filter" data-role="button" data-filter=".consulting">Consulting</li>
+                    <li class="filter" data-role="button" data-filter=".construction">Construction</li>
+                    <li class="filter" data-role="button" data-filter=".engineering">Engineering</li>
+                    <li class="filter" data-role="button" data-filter=".interior">Interior Design</li>
+                    <li class="filter" data-role="button" data-filter=".facility">Facility Optimization</li>
+                </ul>
+            </div>
+            
+            <div class="filter-list row clearfix" id="MixItUp8D3B97">
+            
+
+                {% for bien in biens %}
+                <!--Gallery Block-->
+                <div class="gallery-block mix architecture facility all col-md-6 col-sm-6 col-xs-12" style="display: inline-block;">
+                    <div class="item">
+                        <div><img src="{{bien.image.url}}" alt=""></div>
+                        <div class="info">
+                            <h3><a href="{{bien.get_absolute_url}}">{{bien.title}}</a></h3>
+                            <h4><a href="{{bien.get_absolute_url}}">{{bien.location}}</a></h4>
+                            <a href="{{bien.get_absolute_url}}"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!--End Project Page Section-->
+
+<!--Call To Action-->
+<section class="call-to-action">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="column col-md-8 col-sm-12 col-xs-12">
+                <h3 class="text">Notre équipe est toujours à vôtre service. Contactez nous dès maitenant pour en savoir plus.</h3>
+            </div>
+            <div class="btn-column col-md-4 col-sm-12 col-xs-12">
+                <a href="{% url 'web:contact' %}" class="theme-btn btn-style-six">Nous contacter</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Call To Action-->
+{% endblock content %}

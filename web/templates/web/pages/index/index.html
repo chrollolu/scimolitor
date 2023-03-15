@@ -1,0 +1,41 @@
+{% extends '../../base.html' %}
+{% load static %}
+
+{% block css %}
+
+{% endblock css %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block hero %}
+{% comment %}
+
+{% endcomment %}
+{% endblock hero %}
+
+{% block content %}
+
+{% comment %} Main slider {% endcomment %}
+{% include '../../sections/_slider.html' %}
+
+{% comment %} Description {% endcomment %}
+{% include '../../sections/_about.html' %}
+
+{% comment %} Projects {% endcomment %}
+{% include '../../sections/_projects.html' %}
+
+{% comment %} Services {% endcomment %}
+{% include '../../sections/_services.html' %}
+
+{% comment %} Counter {% endcomment %}
+{% include '../../sections/_counter.html' %}
+
+{% comment %} news {% endcomment %}
+{% include '../../sections/_news.html' %}
+
+{% comment %} Testimonial {% endcomment %}
+{% comment %} {% include '../../sections/_testimonial.html' %} {% endcomment %}
+
+{% endblock content %}

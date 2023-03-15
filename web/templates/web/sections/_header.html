@@ -1,0 +1,167 @@
+{% load static %}
+
+<header class="main-header">
+
+    <!--Header-Upper-->
+    <div class="header-upper">
+        <div class="auto-container clearfix">
+            <div class="pull-left logo-outer">
+                <div class="logo"><a href="/"><img src="{% static 'images/logo.png' %}" width="150px" alt="Aizen - Architecture Template" title="Aizen - Architecture Template"></a></div>
+            </div>
+            <div class="pull-right upper-right clearfix">
+                <nav class="main-menu">
+                    <div class="navbar-header">
+                        <!-- Toggle Button -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            <li class="current"><a href="{% url 'web:index' %}">ACCUEIL</a></li>
+                            <li><a href="https://itelegroup.ci">I-TELEGES GROUP</a></li>
+                            <li class="dropdown">
+                                <a href="#">QUI SOMMES-NOUS ?</a>
+                                <ul>
+                                    <li><a href="{% url 'web:vision' %}">Vision</a></li>
+                                    <li><a href="{% url 'web:leitmotiv' %}">Leit motiv’</a></li>
+                                    <li><a href="{% url 'web:team' %}">Nôtre équipe</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="services.html">SERVICES</a>
+                                <ul>
+                                    <li class="dropdown">
+                                        <a href="#">Services</a>
+                                        <ul>
+                                            <li><a href="{% url 'web:lotissement' %}">Lotissement</a></li>
+                                            <li><a href="{% url 'web:amenagementfoncier' %}">Aménagement foncier</a></li>
+                                            <li><a href="{% url 'web:formation' %}">Formation</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">En location</a>
+                                        <ul>
+                                            <li><a href="{% url 'web:locationmaisons' %}">Maisons</a></li>
+                                            <li><a href="{% url 'web:engins' %}">Engins</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">En vente</a>
+                                        <ul>
+                                            <li><a href="{% url 'web:terrains' %}">Terrains</a></li>
+                                            <li><a href="{% url 'web:ventemaisons' %}">Maisons</a></li>
+                                            <li><a href="{% url 'web:promotionimmobiliere' %}">Promotion Immobilière</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="{% url 'web:gallery' %}">GALERIE</a></li>
+                            <li><a href="{% url 'web:contact' %}">CONTACTS</a></li>
+
+                            <li style="position: relative; float: left; margin-left: 40px;">
+                                <a>
+                                    <select style="background-color: transparent; ;">
+                                        <option>FRANÇAIS</option>
+                                        <option>ANGLAIS</option>
+                                    </select>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--End Header Upper-->
+
+    <!--Sticky Header-->
+    <div class="sticky-header">
+        <div class="auto-container clearfix">
+            <!--Logo-->
+            <div class="logo pull-left">
+                <a href="/" class="img-responsive"><img src="{% static 'images/logo-small.png' %}"
+                        alt="Aizen - Architecture Template" title="Aizen - Architecture Template"></a>
+            </div>
+            <!--Right Col-->
+            <div class="right-col pull-right">
+
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                    <div class="navbar-header">
+                        <!-- Toggle Button -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            {% comment %} <li class="current"><a href="index.html">ACCUEIL</a></li>
+                            <li><a href="index.html">I-TELEGES GROUP</a></li>
+                            <li><a href="about.html">QUI SOMMES-NOUS ?</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="gallery.html">GALERIE</a></li>
+                            <li><a href="contact.html">NOUS CONTACTER</a></li> {% endcomment %}
+                            <li class="current"><a href="{% url 'web:index' %}">ACCUEIL</a></li>
+                            <li><a href="https://itelegroup.ci">I-TELEGES GROUP</a></li>
+                            <li class="dropdown">
+                                <a href="#">QUI SOMMES-NOUS ?</a>
+                                <ul>
+                                    <li><a href="{% url 'web:vision' %}">Vision</a></li>
+                                    <li><a href="{% url 'web:leitmotiv' %}">Leit motiv’</a></li>
+                                    <li><a href="{% url 'web:team' %}">Nôtre équipe</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="services.html">SERVICES</a>
+                                <ul>
+                                    <li class="dropdown">
+                                        <a href="#">Services</a>
+                                        <ul>
+                                            <li><a href="{% url 'web:lotissement' %}">Lotissement</a></li>
+                                            <li><a href="{% url 'web:amenagementfoncier' %}">Aménagement foncier</a></li>
+                                            <li><a href="{% url 'web:formation' %}">Formation</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">En location</a>
+                                        <ul>
+                                            <li><a href="{% url 'web:locationmaisons' %}">Maisons</a></li>
+                                            <li><a href="{% url 'web:engins' %}">Engins</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">En vente</a>
+                                        <ul>
+                                            <li><a href="{% url 'web:terrains' %}">Terrains</a></li>
+                                            <li><a href="{% url 'web:ventemaisons' %}">Maisons</a></li>
+                                            <li><a href="{% url 'web:promotionimmobiliere' %}">Promotion Immobilière</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="{% url 'web:gallery' %}">GALERIE</a></li>
+                            <li><a href="{% url 'web:contact' %}">CONTACTS</a></li>
+
+                            <li style="position: relative; float: left; margin-left: 20px;">
+                                <a>
+                                    <select style="background-color: transparent; ;">
+                                        <option>FRANÇAIS</option>
+                                        <option>ANGLAIS</option>
+                                    </select>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Main Menu End-->
+
+            </div>
+        </div>
+    </div>
+    <!--End Sticky Header-->
+
+</header>

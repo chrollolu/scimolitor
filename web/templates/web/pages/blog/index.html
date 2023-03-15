@@ -1,0 +1,121 @@
+{% extends '../../base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<!--Page Title-->
+<section class="page-title" style="background-image:url({% static 'images/background/3.jpg' %})">
+    <div class="auto-container">
+        <h1>Latest News</h1>
+        <ul class="bread-crumb clearfix">
+            <li><a href="{% url 'web:index' %}">ACCUEIL</a></li>
+            <li class="active">Nos dernières actualités</li>
+        </ul>
+    </div>
+</section>
+<!--End Page Title-->
+
+<!--Sidebar Page Container-->
+<div class="sidebar-page-container">
+    <div class="auto-container">
+        <div class="row clearfix">
+            
+            <!--Content Side / Blogs Classic-->
+            <div class="content-side col-md-8 col-sm-12 col-xs-12">
+                <div class="blog-classic">
+                    
+                    {% for post in posts  %}
+                    
+                    <!--News Block Four-->
+                    <div class="news-block-four">
+                        <div class="inner-box">
+                            <a href="{{ post.get_absolute_url }}">
+                                <div class="image">
+                                    <img src="{{ post.image.url }}" alt="">
+                                </div>
+                            </a>
+                            <div class="lower-box">
+                                <div class="post-date"><i class="far fa-user"></i> By Admin    <i class="far fa-calendar-alt"></i> {{ post.publish | date}}</div>
+                                <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
+                                <div class="text">{{ post.body }}</div>
+                                <div class="clearfix">
+                                    <a href="{{ post.get_absolute_url }}" class="read-more">Lire plus <span class="fa fa-angle-right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    {% endfor %}
+                    
+                    {% comment %} <!--Styled Pagination-->
+                    <div class="styled-pagination">
+                        <ul class="inner-box clearfix">
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#"><span class="fa fa-angle-double-right"></span></a></li>
+                        </ul>
+                    </div>
+                    <!--End Styled Pagination--> {% endcomment %}
+                    
+                </div>
+            </div>
+            
+            <!--Sidebar Side-->
+            <div class="sidebar-side col-md-4 col-sm-12 col-xs-12">
+                <aside class="sidebar right-sidebar">
+                    
+                    <!-- Search -->
+                    <div class="sidebar-widget search-box">
+                        <div class="sidebar-title">
+                            <h2>Recherche</h2>
+                        </div>
+                        <form method="post" action="#">
+                            <div class="form-group">
+                                <input type="search" name="search-field" value="" placeholder="Recherche..." required="">
+                                <button type="submit"><span class="icon fa fa-search"></span></button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!--Category Blog-->
+                    <div class="sidebar-widget categories-blog">
+                        <div class="sidebar-title">
+                            <h2>Categories</h2>
+                        </div>
+                        <div class="inner-box">
+                            <ul>
+                                <li><a href="#">Ventes de maisons</a></li>
+                                <li><a href="#">Ventes de terrains &amp; Planning</a></li>
+                                <li><a href="#">Location de maisons</a></li>
+                                <li><a href="#">Location d'engins</a></li>
+                                <li><a href="#">Promotion immobilière</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </aside>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--Call To Action-->
+<section class="call-to-action">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="column col-md-8 col-sm-12 col-xs-12">
+                <h3 class="text">Notre équipe est toujours à vôtre service. Contactez nous dès maitenant pour en savoir plus.</h3>
+            </div>
+            <div class="btn-column col-md-4 col-sm-12 col-xs-12">
+                <a href="{% url 'web:contact' %}" class="theme-btn btn-style-six">Nous contacter</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Call To Action-->
+
+{% endblock content %}

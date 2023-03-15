@@ -1,0 +1,111 @@
+{% extends '../../base.html' %}
+{% load static %}
+
+
+{% block content %}
+<!--Page Title-->
+<section class="page-title" style="background-image:url({% static 'images/background/3.jpg' %})">
+    <div class="auto-container">
+        <h1>Gallery</h1>
+        <ul class="bread-crumb clearfix">
+            <li><a href="{% url 'web:index' %}">ACCUEIL</a></li>
+            <li class="active">Gallery</li>
+        </ul>
+    </div>
+</section>
+<!--End Page Title-->
+
+<!--Gallery Page Section-->
+<section class="gallery-section">
+    <div class="auto-container clearfix">
+        {% comment %} <!--Gallery Title-->
+        <div class="faqs-title">
+            <h3>Check out our most distinguished constructions</h3>
+            <div class="separator"></div>
+        </div> {% endcomment %}
+
+        <div class="column col-md-6 col-sm-6 col-xs-12 gallery-item">
+            <a href="{% static 'images/gallery/1.jpg' %}" class="plus-icon lightbox-image" data-fancybox-group="gallery-one">
+                <div class="gallery-box">
+                    <div class="gallery-img"><img src="{% static 'images/gallery/1.jpg' %}" alt="" /></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="column col-md-6 col-sm-6 col-xs-12 gallery-item">
+            <a href="{% static 'images/gallery/2.jpg' %}" class="plus-icon lightbox-image" data-fancybox-group="gallery-one">
+                <div class="gallery-box">
+                    <div class="gallery-img"><img src="{% static 'images/gallery/2.jpg' %}" alt="" /></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="column col-md-6 col-sm-6 col-xs-12 gallery-item">
+            <a href="{% static 'images/gallery/3.jpg' %}" class="plus-icon lightbox-image" data-fancybox-group="gallery-one">
+                <div class="gallery-box">
+                    <div class="gallery-img"><img src="{% static 'images/gallery/3.jpg' %}" alt="" /></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="column col-md-6 col-sm-6 col-xs-12 gallery-item">
+            <a href="{% static 'images/gallery/4.jpg' %}" class="plus-icon lightbox-image" data-fancybox-group="gallery-one">
+                <div class="gallery-box">
+                    <div class="gallery-img"><img src="{% static 'images/gallery/4.jpg' %}" alt="" /></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="column col-md-4 col-sm-6 col-xs-12 gallery-item">
+            <a href="{% static 'images/gallery/5.jpg' %}" class="plus-icon lightbox-image" data-fancybox-group="gallery-one">
+                <div class="gallery-box">
+                    <div class="gallery-img"><img src="{% static 'images/gallery/5.jpg' %}" alt="" /></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="column col-md-4 col-sm-6 col-xs-12 gallery-item">
+            <a href="{% static 'images/gallery/6.jpg' %}" class="plus-icon lightbox-image" data-fancybox-group="gallery-one">
+                <div class="gallery-box">
+                    <div class="gallery-img"><img src="{% static 'images/gallery/6.jpg' %}" alt="" /></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="column col-md-4 col-sm-6 col-xs-12 gallery-item">
+            <a href="{% static 'images/gallery/7.jpg' %}" class="plus-icon lightbox-image" data-fancybox-group="gallery-one">
+                <div class="gallery-box">
+                    <div class="gallery-img"><img src="{% static 'images/gallery/7.jpg' %}" alt="" /></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="column col-md-4 col-sm-6 col-xs-12 gallery-item">
+            <a href="{% static 'images/gallery/8.jpg' %}" class="plus-icon lightbox-image" data-fancybox-group="gallery-one">
+                <div class="gallery-box">
+                    <div class="gallery-img"><img src="{% static 'images/gallery/8.jpg' %}" alt="" /></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="column col-md-4 col-sm-6 col-xs-12 gallery-item">
+            <a href="{% static 'images/gallery/9.jpg' %}" class="plus-icon lightbox-image" data-fancybox-group="gallery-one">
+                <div class="gallery-box">
+                    <div class="gallery-img"><img src="{% static 'images/gallery/9.jpg' %}" alt="" /></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="column col-md-4 col-sm-6 col-xs-12 gallery-item">
+            <a href="{% static 'images/gallery/10.jpg' %}" class="plus-icon lightbox-image" data-fancybox-group="gallery-one">
+                <div class="gallery-box">
+                    <div class="gallery-img"><img src="{% static 'images/gallery/10.jpg' %}" alt="" /></div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</section>
+<!--Gallery Page Section-->
+{% endblock content %}
+

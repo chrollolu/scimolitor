@@ -1,0 +1,163 @@
+{% extends '../../base.html' %}
+{% load static %}
+{% block hero %}
+<div class="pages-hero">
+    <div class="container">
+        <div class="pages-title">
+            <h1>Quote Request</h1>
+            <div class="page-nav">
+                <p><a href="#">Home</a> &nbsp; | &nbsp; <a href="#">Quote Request</a></p>
+            </div>
+        </div>
+        
+    </div>  
+</div>
+{% endblock hero %}
+
+{% block content %}
+<section>
+        
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="quote-layer">
+                    <h2>Quote Request</h2>
+                    <p>Ocean transport, Air transport, Land transport, or any combination of these are familiar to the experts. We’ve been doing this since 1984</p>
+                    <form id="contact-form" method="post" action="contact.php">
+                        <div class="messages"></div>
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="form_name" type="text" name="name" class="form-control customize-alt" placeholder="Name" required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="form_email" type="email" name="email" class="form-control customize-alt" placeholder="Email address" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="form_phone" type="tel" name="phone" class="form-control customize-alt" placeholder="Please enter your phone">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select class="form-control customize-alt" id="exampleFormControlSelect1">
+                                          <option>Choose Freight</option>
+                                          <option>Air Freight</option>
+                                          <option>Ground Freight</option>
+                                          <option>Maritime</option>
+                                          <option>Railway Freight</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea id="form_message" name="message" class="form-control customize-alt" placeholder="Your message" rows="6" required="required" data-error="Please,leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 btn-send">
+                                    <p><input type="submit" class="btn btn-contact btn-quote" value="SUBMIT"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-view">
+                <aside>
+                    <div class="sidebar-list">                
+                        <div class="list-group">
+                          <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                            Transportation
+                            <span class="badge"><i class="fas fa-chevron-right"></i></span>
+                          </a>
+                          <a href="team.html" class="list-group-item d-flex justify-content-between align-items-center">
+                            Our Team
+                            <span class="badge"><i class="fas fa-chevron-right"></i></span>
+                          </a>
+                          <a href="faq.html" class="list-group-item d-flex justify-content-between align-items-center">
+                            FAQ's
+                            <span class="badge"><i class="fas fa-chevron-right"></i></span>
+                          </a>
+                          <a href="quote-request.html" class="list-group-item d-flex justify-content-between align-items-center">
+                            Quote Request
+                            <span class="badge"><i class="fas fa-chevron-right"></i></span>
+                          </a>
+                          <a href="tracking-shipment.html" class="list-group-item d-flex justify-content-between align-items-center">
+                            Track Shipment
+                            <span class="badge"><i class="fas fa-chevron-right"></i></span>
+                          </a>
+                          <a href="careers.html" class="list-group-item d-flex justify-content-between align-items-center">
+                            Careers
+                            <span class="badge"><i class="fas fa-chevron-right"></i></span>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="brochures">
+                        <div class="brochures-files">
+                            <div class="list-group">
+                              <a href="#" class="list-group-item">
+                                <i class="fas fa-file-pdf"></i> Company Presentation
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    
+     <!-- WIDE SECTION START -->
+    <div class="ws-services-alt mt-5 mb-5">
+        <div class="row">
+            <div class="col-lg-5 ws-left-layer">
+                
+            </div>
+            <div class="col-lg-7 ws-right-layer-alt">
+                <div class="inner-ws-right">
+                    <div class="side-title">
+                        <h6>WorldWide Shipping</h6>
+                        <h2>Borderless Logistics</h2>
+                    </div>
+                    <p class="strong">World’s leading non-asset- based supply chain management companies, we design and implement industry-leading.</p>
+                    <br>
+                    <div class="layer-highlighted-alt mt-3">
+                        <div class="media">
+                          <img src="{% static 'img/master/shipping-and-delivery.svg' %}" class="mr-3" alt="...">
+                          <div class="media-body">
+                            <h4 class="mt-0">Package Protection</h4>
+                            <p>Dedicated implementation teams will ensure a smooth and quick introduction to our systems.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="layer-highlighted-alt mt-3">
+                        <div class="media">
+                          <img src="{% static 'img/master/support.svg' %}" class="mr-3" alt="...">
+                          <div class="media-body">
+                            <h4 class="mt-0">24/7 Support</h4>
+                            <p>Call or email us today to request a call from one of our sales colleagues to create new opportunities.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- WIDE SECTION END -->
+    
+    <!-- CLIENTS START -->
+    {% include '../../_clients.html' %}
+    <!-- CLIENTS END -->
+    
+</section> 
+{% endblock content %}
+

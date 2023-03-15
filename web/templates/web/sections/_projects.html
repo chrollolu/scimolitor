@@ -1,0 +1,28 @@
+{% load static %}
+
+<!--Project Section-->
+<section class="project-section-home">
+    <div class="auto-container">
+        <div class="sec-title style-two centered">
+            <h2>Nos <span>Biens</span></h2>
+            <div class="separator"></div>
+        </div>
+        <div class="projects-carousel owl-carousel owl-theme">
+            {% for bien in biens %}
+            <div class="item">
+                <div><img src="{{bien.image.url}}" alt=""></div>
+                <div class="info">
+                    <h3><a href="{{bien.get_absolute_url}}">{{bien.title}}</a></h3>
+                    <h4><a href="{{bien.get_absolute_url}}">{{bien.location}}</a></h4>
+                    <a href="{{bien.get_absolute_url}}"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <br>
+    <div class="text-center">
+        <a href="{% url 'web:bien' %}" class="theme-btn btn-style-one">Plus de biens</a>
+    </div>
+</section>
+<!--End Project Section-->

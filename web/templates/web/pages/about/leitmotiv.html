@@ -1,0 +1,45 @@
+{% extends '../../base.html' %}
+{% load static %}
+
+{% block content %}
+<!--Page Title-->
+<section class="page-title" style="background-image:url({% static 'images/background/3.jpg' %})">
+  <div class="auto-container">
+    <h1>QUI SOMMES NOUS </h1>
+    <ul class="bread-crumb clearfix">
+      <li><a href="index.html">ACCUEIL</a></li>
+      <li class="active">A PROPOS DE SCI MOLITOR</li>
+    </ul>
+  </div>
+</section>
+<!--End Page Title-->
+
+<!--About Section-->
+<section class="about-section">
+  <div class="auto-container">
+    <div class="row clearfix">
+      <div class="content-column col-md-6 col-sm-12 col-xs-12">
+        <div class="inner-column">
+          <div class="sec-title style-two">
+            <h2>Notre Leitmotiv</h2>
+            <div class="separator"></div>
+          </div>
+          <div class="text">
+            EXPERIENCE : SCI MOLITOR possède des années d'expérience de plus de 20 ans à travers
+celles des membres de son personnel, qui ne cessent d'en acquérir.
+FIABILITE : avec SCI MOLITOR, chose promise chose due. Plus besoin de vous tracasser,
+nous vous accompagnons pendant tout le cursus de votre acquisition.
+EFFICACITE : SCI MOLITOR, vous garantit un travail bien fait et efficace.
+          </div>
+        </div>
+      </div>
+      <div class="image-column col-md-6 col-sm-12 col-xs-12">
+        <div class="image">
+          <img src="{% static 'images/resource/about-2.png' %}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End About Section-->
+{% endblock content %}

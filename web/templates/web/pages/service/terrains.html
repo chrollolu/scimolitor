@@ -1,0 +1,62 @@
+{% extends '../../base.html' %}
+{% load static %}
+
+{% block content %}
+<!--Page Title-->
+<section class="page-title" style="background-image:url({% static 'images/background/3.jpg' %})">
+  <div class="auto-container">
+    <h1>VENTE DE TERRAINS</h1>
+    <ul class="bread-crumb clearfix">
+      <li><a href="{% url 'web:index' %}">ACCUEIL</a></li>
+      <li><a href="{% url 'web:service' %}">Services</a></li>
+      <li class="active">VENTE DE TERRAINS</li>
+    </ul>
+  </div>
+</section>
+<!--End Page Title-->
+
+<!--Sidebar Page Container-->
+<div class="sidebar-page-container">
+  <div class="auto-container">
+    <div class="row clearfix">
+      
+      <!--Service Details-->
+      <div class="content-side col-md-12 col-sm-12 col-xs-12">
+        <div class="services-single">
+          <div class="inner-box">
+            <div class="image">
+              <img src="{% static 'images/services/service-8.jpg' %}" alt="">
+            </div>
+            <div class="lower-content">
+              <h2>VENTE DE TERRAINS</h2>
+              <div class="dark-text">L’application des données numériques ou théoriques fournies par nos experts, permettent un
+                aménagement foncier hors du commun de votre bien.
+                Vous souhaitez que votre aménagement foncier soit réalisé dans les règles de l'art, en toute
+                conformité avec les règles établies par l'état de Côte d'Ivoire ?
+                Nous sommes la solution.</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!--Call To Action-->
+<section class="call-to-action">
+  <div class="auto-container">
+      <div class="row clearfix">
+          <div class="column col-md-8 col-sm-12 col-xs-12">
+              <h3 class="text">Notre équipe est toujours à vôtre service. Contactez nous dès maitenant pour en savoir plus.</h3>
+          </div>
+          <div class="btn-column col-md-4 col-sm-12 col-xs-12">
+              <a href="{% url 'web:contact' %}" class="theme-btn btn-style-six">Nous contacter</a>
+          </div>
+      </div>
+  </div>
+</section>
+<!--End Call To Action-->
+{% endblock content %}
+

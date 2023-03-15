@@ -1,0 +1,146 @@
+{% extends '../../base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'images/background/3.jpg' %})">
+        <div class="auto-container">
+            <h1>Services</h1>
+            <ul class="bread-crumb clearfix">
+                <li><a href="{% url 'web:index' %}">ACCUEIL</a></li>
+                <li class="active">Nos Services</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+    
+    <!--Services Section-->
+    <section class="services-section-two style-two">
+        <div class="auto-container">
+            <!--Services Title-->
+            {% comment %} <div class="services-title">
+                <h3>We believe architecture is critically important to addressing<br>the most pressing challenges of our time</h3>
+                <div class="separator"></div>
+            </div> {% endcomment %}
+            <div class="row clearfix">
+
+                <!--Services Block-->
+                <div class="services-block-two style-two col-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <img src="{% static 'images/services/icon-1.svg' %}" alt="">
+                        </div>
+                        <h3><a href="{% url 'web:lotissement' %}">Lotissement</a></h3>
+                        <div class="text">Provides an opportunity to not only add beauty and structure to the world, but to profoundly improve the conditions for people.</div>
+                        <a class="read-more" href="{% url 'web:lotissement' %}">read more <span class="icon fa fa-angle-right"></span></a>
+                    </div>
+                </div>
+
+                <!--Services Block-->
+                <div class="services-block-two style-two col-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <img src="{% static 'images/services/icon-1.svg' %}" alt="">
+                        </div>
+                        <h3><a href="{% url 'web:formation' %}">Formations</a></h3>
+                        <div class="text">Provides an opportunity to not only add beauty and structure to the world, but to profoundly improve the conditions for people.</div>
+                        <a class="read-more" href="{% url 'web:formation' %}">read more <span class="icon fa fa-angle-right"></span></a>
+                    </div>
+                </div>
+
+                <!--Services Block-->
+                <div class="services-block-two style-two col-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <img src="{% static 'images/services/icon-1.svg' %}" alt="">
+                        </div>
+                        <h3><a href="{% url 'web:locationmaisons' %}">Location de Maisons</a></h3>
+                        <div class="text">Provides an opportunity to not only add beauty and structure to the world, but to profoundly improve the conditions for people.</div>
+                        <a class="read-more" href="{% url 'web:locationmaisons' %}">read more <span class="icon fa fa-angle-right"></span></a>
+                    </div>
+                </div>
+
+                <!--Services Block-->
+                <div class="services-block-two style-two col-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <img src="{% static 'images/services/icon-1.svg' %}" alt="">
+                        </div>
+                        <h3><a href="{% url 'web:engins' %}">Location d'Engins</a></h3>
+                        <div class="text">Provides an opportunity to not only add beauty and structure to the world, but to profoundly improve the conditions for people.</div>
+                        <a class="read-more" href="{% url 'web:engins' %}">read more <span class="icon fa fa-angle-right"></span></a>
+                    </div>
+                </div>
+
+                <!--Services Block-->
+                <div class="services-block-two style-two col-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <img src="{% static 'images/services/icon-1.svg' %}" alt="">
+                        </div>
+                        <h3><a href="{% url 'web:terrains' %}">Ventes de Terrains</a></h3>
+                        <div class="text">Provides an opportunity to not only add beauty and structure to the world, but to profoundly improve the conditions for people.</div>
+                        <a class="read-more" href="{% url 'web:terrains' %}">read more <span class="icon fa fa-angle-right"></span></a>
+                    </div>
+                </div>
+
+                <!--Services Block-->
+                <div class="services-block-two style-two col-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <img src="{% static 'images/services/icon-1.svg' %}" alt="">
+                        </div>
+                        <h3><a href="{% url 'web:ventemaisons' %}">Ventes de Maisons</a></h3>
+                        <div class="text">Provides an opportunity to not only add beauty and structure to the world, but to profoundly improve the conditions for people.</div>
+                        <a class="read-more" href="{% url 'web:ventemaisons' %}">read more <span class="icon fa fa-angle-right"></span></a>
+                    </div>
+                </div>
+
+                <!--Services Block-->
+                <div class="services-block-two style-two col-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <img src="{% static 'images/services/icon-1.svg' %}" alt="">
+                        </div>
+                        <h3><a href="{% url 'web:promotionimmobiliere' %}">Promotion Immobilière</a></h3>
+                        <div class="text">Provides an opportunity to not only add beauty and structure to the world, but to profoundly improve the conditions for people.</div>
+                        <a class="read-more" href="{% url 'web:promotionimmobiliere' %}">read more <span class="icon fa fa-angle-right"></span></a>
+                    </div>
+                </div>
+
+                <!--Services Block-->
+                <div class="services-block-two style-two col-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <img src="{% static 'images/services/icon-1.svg' %}" alt="">
+                        </div>
+                        <h3><a href="{% url 'web:amenagementfoncier' %}">Aménagement Foncier</a></h3>
+                        <div class="text">Provides an opportunity to not only add beauty and structure to the world, but to profoundly improve the conditions for people.</div>
+                        <a class="read-more" href="{% url 'web:amenagementfoncier' %}">read more <span class="icon fa fa-angle-right"></span></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Services Section-->
+
+    <!--Call To Action-->
+    <section class="call-to-action">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="column col-md-8 col-sm-12 col-xs-12">
+                    <h3 class="text">Notre équipe est toujours à vôtre service. Contactez nous dès maitenant pour en savoir plus.</h3>
+                </div>
+                <div class="btn-column col-md-4 col-sm-12 col-xs-12">
+                    <a href="{% url 'web:contact' %}" class="theme-btn btn-style-six">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Call To Action-->
+
+</body>
+{% endblock content %}
+

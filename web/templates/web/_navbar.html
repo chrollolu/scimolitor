@@ -1,0 +1,53 @@
+{% load static %}
+
+<!-- TOP HEADER START -->
+<div class="top-header-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="top-contact text-left">
+                    <li class="mail"><a href="mailto:joseph.ehivet@joedel.ci">joseph.ehivet@joedel.ci</a></li>
+                    <li class="phone"><span class="tel-no"><a href="tel:+(225) 07 07 05 32 51"> +(225) 07 07 05 32 51</a></span></li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-right">
+                <div class="top-social">
+                    <ul class="social-list">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="m-0"><a class="btn quote-btn" href="{% url 'web:devis' %}" role="button">DEVIS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="top-header-line">
+    </div>
+</div>
+<!-- TOP HEADER END -->
+
+<!-- NAV START -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container p-0">
+        <a href="/" class="navbar-brand"><img src="{% static 'img/master/logo4.png' %}" alt=""></a>
+
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+        </button>
+
+        <div id="main-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="dropdown">
+                    <a href="{% url 'web:index' %}" class="nav-item nav-link">JOEDEL NEGOCE</a>
+                </li>
+                <li class="dropdown">
+                    <a href="{% url 'web:index' %}" class="nav-item nav-link border-0">JOEDEL TRANSIT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- NAV END -->

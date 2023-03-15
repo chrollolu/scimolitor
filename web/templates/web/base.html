@@ -1,0 +1,88 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>SCI-MOLITOR | Aménagement foncier - Construction & Gestion Immobilière</title>
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
+	<link rel="icon" href="{% static 'images/favicon.png' %}">
+
+	<!--Stylesheets-->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'plugins/revolution/css/settings.css' %}">
+	<link rel="stylesheet" href="{% static 'plugins/revolution/css/layers.css' %}">
+	<link rel="stylesheet" href="{% static 'plugins/revolution/css/navigation.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.default.css' %}">
+
+	<!--Color Themes-->
+	<link rel="stylesheet" href="{% static 'css/default-theme.css' %}">
+</head>
+
+<body>
+	<div class="page-wrapper">
+
+		<!-- Preloader -->
+		<div class="preloader"></div>
+
+		<!-- HEADER START -->
+		{% include './sections/_header.html' %}
+		<!-- HEADER END -->
+
+        <!-- BLOCK CONTENT-->
+        {% block content %}
+
+        
+        {% endblock content %}
+        <!-- BLOCK CONTENT-->
+		
+		
+		<!--FOOTER START-->
+        {% include './sections/_footer.html' %}
+        <!--FOOTER END-->
+		
+	</div>
+	<!--End pagewrapper-->
+
+	<!--Scroll to top-->
+	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
+
+	<script src="{% static 'js/jquery.js' %}"></script>
+	<!--Revolution Slider-->
+	<script src="{% static 'plugins/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+	<script src="{% static 'plugins/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+	<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+	<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+	<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+	<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+	<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+	<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+	<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+	<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+	<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+	<script src="{% static 'js/main-slider-script.js' %}"></script>
+	
+	{% block extra_js %}
+	{% endblock extra_js %}
+	
+	<script src="{% static 'js/modernizr.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+	<script src="{% static 'js/jquery.fancybox-media.js' %}"></script>
+	<script src="{% static 'js/owl.js' %}"></script>
+	<script src="{% static 'js/mixitup.js' %}"></script>
+	<script src="{% static 'js/appear.js' %}"></script>
+	<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>

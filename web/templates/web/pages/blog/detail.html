@@ -1,0 +1,44 @@
+{% extends '../../base.html' %}
+{% load static %}
+
+{% block content %}
+<!--Page Title-->
+<section class="page-title" style="background-image:url({% static 'images/background/3.jpg' %})">
+    <div class="auto-container">
+        <h1>Nos dernières actualités</h1>
+        <ul class="bread-crumb clearfix">
+            <li><a href="{% url 'web:index' %}">Accueil</a></li>
+            <li><a href="{% url 'web:blog' %}">Blog</a></li>
+            <li class="active">{{ post.title }}</li>
+        </ul>
+    </div>
+</section>
+<!--End Page Title-->
+
+<!--Sidebar Page Container-->
+<div class="sidebar-page-container">
+    <div class="auto-container">
+        <div class="row clearfix">
+            
+            <!--Content Side / Blog Single-->
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="blog-single">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{ post.image.url }}" alt="">
+                        </div>
+                        <div class="lower-box">
+                            <div class="post-info"><i class="far fa-user"></i> By Admin    <i class="far fa-calendar-alt"></i> March 29, 2021</div>
+                            <h2>{{ post.title }}</h2>
+                            <div class="text">
+                                {{ post.body }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+

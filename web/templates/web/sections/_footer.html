@@ -1,0 +1,77 @@
+{% load static %}
+
+<footer class="main-footer">
+    <!--Widgets Section-->
+    <div class="widgets-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="column col-md-12 col-sm-12 col-xs-12">
+                    <div class="row clearfix">
+
+                        <!--Footer Column-->
+                        <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                            <div class="footer-widget logo-widget">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{% static 'images/footer-logo.png' %}" alt=""></a>
+                                </div>
+                                <div class="widget-content">
+                                    <div class="text">SCI MOLITOR est une filiale d’I-TELEGES GROUP, holding hébergeant en son sein plusieurs
+                                        autres sociétés et spécialisée dans l'ingénierie, l'immobilier et le foncier, l'agro-industrie sans oublier
+                                        l'économie numérique</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Footer Column-->
+                        <div class="footer-column col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-widget logo-widget">
+                                <div class="footer-title">
+                                    <h2>Liens utiles</h2>
+                                    <div class="separator"></div>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="">
+                                        <li><a href="{% url 'web:contact' %}"><span>CLIENTS</span></a></li>
+                                        <li><a href="{% url 'web:service' %}"><span>BIENS & SERVICES</span></a></li>
+                                        <li><a href="#"><span></span>QUI SOMMES NOUS</a></li>
+                                        <li><a href="#"><span></span>BROCHURE COMMERCIALE</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Footer Column-->
+                        <div class="footer-column col-md-5 col-sm-6 col-xs-12">
+                            <div class="footer-widget link-widget">
+                                <div class="footer-title">
+                                    <h2>Contact Details</h2>
+                                    <div class="separator"></div>
+                                </div>
+                                <div class="widget-content">
+                                    <ul>
+                                        <li><span>Email: </span> info@scimolitor.com</li>
+                                        <li><span>Phone: </span> (+225) 27 21 38 74 48 / (+225) 07 57 53 53 53 / (+225) 05 84 08 63 63</li>
+                                        <li><span>Address: </span>Cocody Riviera Palmeraie, Bessikoi Immeuble ADOU H-R, Abidjan Côte d’Ivoire, 05 BP 2347 Abidjan 05 </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer Bottom-->
+    <div class="footer-bottom">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="column col-md-6 col-sm-6 col-xs-12">
+                    <div class="copyright">Copyright &copy; 2023. SCI MOLITOR, Tout droits reservés </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>

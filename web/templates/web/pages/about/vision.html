@@ -1,0 +1,44 @@
+{% extends '../../base.html' %}
+{% load static %}
+
+{% block content %}
+<!--Page Title-->
+<section class="page-title" style="background-image:url({% static 'images/background/3.jpg' %})">
+  <div class="auto-container">
+    <h1>QUI SOMMES NOUS </h1>
+    <ul class="bread-crumb clearfix">
+      <li><a href="index.html">ACCUEIL</a></li>
+      <li class="active">A PROPOS DE SCI MOLITOR</li>
+    </ul>
+  </div>
+</section>
+<!--End Page Title-->
+
+<!--About Section-->
+<section class="about-section">
+  <div class="auto-container">
+    <div class="row clearfix">
+      <div class="content-column col-md-6 col-sm-12 col-xs-12">
+        <div class="inner-column">
+          <div class="sec-title style-two">
+            <h2>Notre Vision</h2>
+            <div class="separator"></div>
+          </div>
+          <div class="text">
+            Présente sur le marché de l’immobilier et de la vente de terrains depuis 2017, SCI MOLITOR a
+l’intention de révolutionner ce secteur en proposant des biens et services adaptés aux besoins de
+la clientèle cible en toute fiabilité, efficacité et professionnalisme : faire des opérations
+immobilières en Côte d’Ivoire un domaine sûr et accessible à tous.
+          </div>
+        </div>
+      </div>
+      <div class="image-column col-md-6 col-sm-12 col-xs-12">
+        <div class="image">
+          <img src="{% static 'images/resource/about-2.png' %}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End About Section-->
+{% endblock content %}

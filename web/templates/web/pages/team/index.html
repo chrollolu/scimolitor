@@ -1,0 +1,130 @@
+{% extends '../../base.html' %}
+{% load static %}
+
+{% block content %}
+<!--Page Title-->
+<section class="page-title" style="background-image:url({% static 'images/background/3.jpg' %})">
+    <div class="auto-container">
+        <h1>Nôtre équipe</h1>
+        <ul class="bread-crumb clearfix">
+            <li><a href="{% url 'web:index' %}">ACCUEIL</a></li>
+            <li class="active">Nôtre équipe</li>
+        </ul>
+    </div>
+</section>
+<!--End Page Title-->
+
+<!--Team Section-->
+<section class="team-section">
+    <div class="auto-container">
+
+        {% comment %} <!--Sec Title-->
+        <div class="sec-title centered">
+            <h3>We’re architects, planners, engineers, strategists and<br>industry specialists spanning hundreds of disciplines</h3>
+            <div class="separator"></div>
+        </div>
+        <!--End Sec Title--> {% endcomment %}
+
+        <div class="row clearfix">
+
+            <!--Team Member-->
+            <div class="team-member col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <div class="image">
+                        <img src="{% static 'images/resource/team-1.jpg' %}" alt="">
+                    </div>
+                    <div class="lower-box">
+                        <h3><a href="#">M. Anicet Eby AMOA</a></h3>
+                        <div class="designation">DIRECTEUR DES OPÉRATIONS</div>
+                        <ul class="social-icon-one">
+                            <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Team Member-->
+            <div class="team-member col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <div class="image">
+                        <img src="{% static 'images/resource/team-2.jpg' %}" alt="" />
+                    </div>
+                    <div class="lower-box">
+                        <h3><a href="#">Mme AMON</a></h3>
+                        <div class="designation">COMPTABILITE</div>
+                        <ul class="social-icon-one">
+                            <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Team Member-->
+            <div class="team-member col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <div class="image">
+                        <img src="{% static 'images/resource/team-3.jpg' %}" alt="" />
+                    </div>
+                    <div class="lower-box">
+                        <h3><a href="#">Miss Marina AMANI</a></h3>
+                        <div class="designation">CHARGÉE DE CLIENTÈLE</div>
+                        <ul class="social-icon-one">
+                            <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Team Member-->
+            <div class="team-member col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <div class="image">
+                        <img src="{% static 'images/resource/team-4.jpg' %}" alt="" />
+                    </div>
+                    <div class="lower-box">
+                        <h3><a href="#">Mme Rita BLEU</a></h3>
+                        <div class="designation">CHARGÉE DE CLIENTÈLE</div>
+                        <ul class="social-icon-one">
+                            <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Team Member-->
+            <div class="team-member col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <div class="image">
+                        <img src="{% static 'images/resource/team-5.jpg' %}" alt="" />
+                    </div>
+                    <div class="lower-box">
+                        <h3><a href="#">M. You ZAN BI</a></h3>
+                        <div class="designation">RESPONSABLE TECHNIQUE</div>
+                        <ul class="social-icon-one">
+                            <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--End Team Section-->
+{% endblock content %}
+
