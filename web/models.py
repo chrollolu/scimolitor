@@ -64,3 +64,18 @@ class Bien(models.Model):
 
     def get_absolute_url(self):
         return reverse('web:bien_detail', args=[self.publish.year, self.publish.month, self.publish.day, self.slug])
+
+
+class Employe(models.Model):
+    titre = models.CharField(max_length=10)
+    nom = models.CharField(max_length=250)
+    fonction = models.CharField(max_length=250)
+    email = models.CharField(max_length=250)
+    mobile = models.CharField(max_length=250)
+    facebook = models.CharField(max_length=250, blank=True)
+    twitter = models.CharField(max_length=250, blank=True)
+    linkedin = models.CharField(max_length=250, blank=True)
+    image = models.ImageField(upload_to='media/employe/%Y/%m/%d', blank=True)
+
+    def __str__(self):
+        return f'{self.nom} {self.prenoms}'

@@ -1,0 +1,38 @@
+---
+data:
+
+  libelle: Hôpital Général de Bouaflé
+  email: hgbouafle@gmail.com
+  code: HG-B
+  typecentre: Hoptital Général
+  ville: BOUAFLE
+  districtsanitaire: BOUAFLE
+  immatriculation: 15x87sd878d7s
+  nombrejourcontrole: 15
+
+  contact:
+    mobile: '+22505500550'
+    fax: '+22505500550'
+    adresse: Bouaflé
+    bp: bp511 Bouaflé
+
+  user:
+    first_name: john
+    last_name: doe
+    username: admin
+    email: johndoe@gmail.com
+    password: admin
+  
+  personnel:
+    #- [  NOM ,  FONCTION ,  EMAIL ,  MOBILE ,  SPECIALITE ,  SERVICE ,  MOBILE  ]
+    - [  Mr. Anicet Eby Amoa  ,  Directeur des Opération ,  01/12/1967 ,  245727F ,  Généraliste ,  Médecine Générale ,  +2250708012201  ]
+
+
+  bien:
+    #- [  NOM ,  PRENOMS ,  DOB ,  MATRICULE ,  SPECIALITE ,  SERVICE ,  MOBILE  ]
+    - [  KONE  ,  IBRAHIMA ,  01/12/1967 ,  245727F ,  Généraliste ,  Médecine Générale ,  +2250708012201  ]
+
+  
+  post: 
+    #- [  NOM ,  PRENOMS ,  DOB ,  MATRICULE ,  SPECIALITE ,  SERVICE ,  MOBILE  ]
+    - [  KONE  ,  IBRAHIMA ,  01/12/1967 ,  245727F ,  Généraliste ,  Médecine Générale ,  +2250708012201  ]
