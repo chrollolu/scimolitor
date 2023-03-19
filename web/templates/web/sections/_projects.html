@@ -1,4 +1,5 @@
 {% load static %}
+{% load thumbnail %}
 
 <!--Project Section-->
 <section class="project-section-home">
@@ -10,7 +11,7 @@
         <div class="projects-carousel owl-carousel owl-theme">
             {% for bien in biens %}
             <div class="item">
-                <div><img src="{{bien.image.url}}" alt=""></div>
+                <div><img src="{% thumbnail bien.image 533x800 crop="smart" %}" alt=""></div>
                 <div class="info">
                     <h3><a href="{{bien.get_absolute_url}}">{{bien.title}}</a></h3>
                     <h4><a href="{{bien.get_absolute_url}}">{{bien.location}}</a></h4>

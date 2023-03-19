@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from django.utils.text import slugify
 
 from django.contrib.auth.models import User
 from django.urls import reverse
@@ -42,6 +43,10 @@ class Post(models.Model):
     def get_absolute_url(self):
         return reverse('web:post_detail', args=[self.publish.year, self.publish.month, self.publish.day, self.slug])
 
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.title)
+        super().save(*args, **kwargs)
 
 
 class Bien(models.Model):
@@ -65,7 +70,12 @@ class Bien(models.Model):
     def get_absolute_url(self):
         return reverse('web:bien_detail', args=[self.publish.year, self.publish.month, self.publish.day, self.slug])
 
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.title)
+        super().save(*args, **kwargs)
 
+        
 class Employe(models.Model):
     titre = models.CharField(max_length=10)
     nom = models.CharField(max_length=250)
@@ -78,4 +88,18 @@ class Employe(models.Model):
     image = models.ImageField(upload_to='media/employe/%Y/%m/%d', blank=True)
 
     def __str__(self):
-        return f'{self.nom} {self.prenoms}'
+        return self.nom
+    
+class Gallery(models.Model):
+    titre = models.CharField(max_length=250)
+    image = models.ImageField(upload_to='media/gallery/%Y/%m/%d', blank=True)
+
+    def __str__(self):
+        return self.titre
+
+class Client(models.Model):
+    nom = models.CharField(max_length=250)
+    image = models.ImageField(upload_to='media/client/%Y/%m/%d', blank=True)
+
+    def __str__(self):
+        return self.nom

@@ -17,9 +17,9 @@
                         <div class="icon-box">
                             <img src="{% static 'images/services/icon-1.svg' %}" alt="">
                         </div>
-                        <h3><a href="services-single.html">Lotissement</a></h3>
+                        <h3><a href="{% url 'web:lotissement' %}">Lotissement</a></h3>
                         <div class="text">Chez SCI MOLITOR, le titrage de vos parcelles à des fins urbaines est fait avec maestra.</div>
-                        <a class="read-more" href="services-single.html">En savoir plus <span
+                        <a class="read-more" href="{% url 'web:lotissement' %}">En savoir plus <span
                                 class="icon fa fa-angle-double-right"></span></a>
                     </div>
                 </div>
@@ -30,10 +30,10 @@
                         <div class="icon-box">
                             <img src="{% static 'images/services/icon-2.svg' %}" alt="">
                         </div>
-                        <h3><a href="services-single.html">Aménagement foncier</a></h3>
+                        <h3><a href="{% url 'web:amenagementfoncier' %}">Aménagement foncier</a></h3>
                         <div class="text">L'application des données numériques ou théoriques fournies par nos experts
                         </div>
-                        <a class="read-more" href="services-single.html">En savoir plus<span
+                        <a class="read-more" href="{% url 'web:amenagementfoncier' %}">En savoir plus<span
                                 class="icon fa fa-angle-double-right"></span></a>
                     </div>
                 </div>
@@ -44,9 +44,9 @@
                         <div class="icon-box">
                             <img src="{% static 'images/services/icon-3.svg' %}" alt="">
                         </div>
-                        <h3><a href="services-single.html">Formation</a></h3>
+                        <h3><a href="{% url 'web:formation' %}">Formation</a></h3>
                         <div class="text">Notre maitrise du secteur de l'immobilier et de la vente de terrain nous amène</div>
-                        <a class="read-more" href="services-single.html">En savoir plus <span
+                        <a class="read-more" href="{% url 'web:formation' %}">En savoir plus <span
                                 class="icon fa fa-angle-double-right"></span></a>
                     </div>
                 </div>
