@@ -7,8 +7,8 @@ function GmapInit() {
 	  Gmap = $('.map-canvas');
 	  Gmap.each(function() {
 		var $this           = $(this),
-			lat             = '5.3848',
-			lng             = '-3.9877',
+			lat             = '5.388506778887032',
+			lng             = '-3.9863853029882206',
 			zoom            = 12,
 			scrollwheel     = false,
 			zoomcontrol 	= true,
@@ -18,6 +18,8 @@ function GmapInit() {
 			contentString   = 'société immobilière en côte d\'ivoire',
 			theme_icon_path         = $this.data('icon-path'),
 			dataLat         = $this.data('lat'),
+			dataLat         = $this.data('lat'),
+			dataLng         = $this.data('lng'),
 			dataLng         = $this.data('lng'),
 			dataZoom        = $this.data('zoom'),
 			dataType        = $this.data('type'),
